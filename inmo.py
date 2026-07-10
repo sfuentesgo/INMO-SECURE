@@ -182,5 +182,4 @@ def index():
     return render_template_string(HTML_TEMPLATE, mensaje=mensaje)
 
 if __name__ == '__main__':
-    # Modificado para apuntar a tu carpeta 'certificados' y archivo 'inmo.py'
     app.run(debug=True, port=5000, ssl_context=('certificados/cert.pem', 'certificados/key.pem'))
